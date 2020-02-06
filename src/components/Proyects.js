@@ -1,79 +1,108 @@
 import React, { Component } from 'react';
 import { MDBCarousel, MDBCarouselInner, MDBCarouselItem, MDBContainer, MDBRow, MDBCol, MDBCard, MDBCardImage,
-    MDBCardBody, MDBCardTitle, MDBCardText, MDBBtn } from "mdbreact";
-import { Pokemon } from '../images/pokemongo.jpg';
- 
+    MDBCardBody, MDBCardTitle, MDBCardText, MDBBtn, MDBMask, MDBView, MDBCarouselCaption } from "mdbreact";
+import Navbar1 from './Navbar';
+import '../App.css';
+
 class Proyects extends Component {
     render() {
         return (
-                <div className="carruselProy">
-    <MDBContainer>
-      <MDBCarousel activeItem={1} length={2} slide={true} showControls={true}  multiItem>
-        <MDBCarouselInner>
-          <MDBRow>
-            <MDBCarouselItem itemId="1">
-              <MDBCol md="4">
-                <MDBCard className="mb-2">
-                  <MDBCardImage className="img-fluid" src={Pokemon} />
-                  <MDBCardBody>
-                    <MDBCardTitle>Maestro Pokemon Go!</MDBCardTitle>
-                    <MDBCardText>
-                      Some quick example text to build on the card title and
-                      make up the bulk of the card's content.
-                    </MDBCardText>
-                    <MDBBtn color="primary" href="https://palomazelada.github.io/SCL011-data-lovers/src/index.html" target="d">Ver Proyecto</MDBBtn>
-                  </MDBCardBody>
-                </MDBCard>
-              </MDBCol>
-              <MDBCol md="4">
-                <MDBCard className="mb-2">
-                  <MDBCardImage className="img-fluid" src="https://mdbootstrap.com/img/Photos/Horizontal/Nature/4-col/img%20(18).jpg" />
-                  <MDBCardBody>
-                    <MDBCardTitle>Feminist Power</MDBCardTitle>
-                    <MDBCardText>
-                      Some quick example text to build on the card title and
-                      make up the bulk of the card's content.
-                    </MDBCardText>
-                    <MDBBtn color="primary">MDBBtn</MDBBtn>
-                  </MDBCardBody>
-                </MDBCard>
-              </MDBCol>
-            </MDBCarouselItem>
-            <MDBCarouselItem itemId="2">
-              <MDBCol md="4">
-                <MDBCard className="mb-2">
-                  <MDBCardImage className="img-fluid" src="https://mdbootstrap.com/img/Photos/Horizontal/Nature/4-col/img%20(60).jpg" />
-                  <MDBCardBody>
-                    <MDBCardTitle>Burger Queen</MDBCardTitle>
-                    <MDBCardText>
-                      Some quick example text to build on the card title and
-                      make up the bulk of the card's content.
-                    </MDBCardText>
-                    <MDBBtn color="primary" href="https://burger-queen-9b026.firebaseapp.com/" target="blank">Ver proyecto</MDBBtn>
-                  </MDBCardBody>
-                </MDBCard>
-              </MDBCol>
-              <MDBCol md="4">
-                <MDBCard className="mb-2">
-                  <MDBCardImage className="img-fluid" src="https://mdbootstrap.com/img/Photos/Horizontal/Nature/4-col/img%20(47).jpg" />
-                  <MDBCardBody>
-                    <MDBCardTitle>MDBCard title</MDBCardTitle>
-                    <MDBCardText>
-                      Some quick example text to build on the card title and
-                      make up the bulk of the card's content.
-                    </MDBCardText>
-                    <MDBBtn color="primary">MDBBtn</MDBBtn>
-                  </MDBCardBody>
-                </MDBCard>
-              </MDBCol>
-            </MDBCarouselItem>
-          </MDBRow>
-        </MDBCarouselInner>
-      </MDBCarousel>
+          <div>
+         <Navbar1 />   
+         <MDBContainer>
+      <MDBCarousel
+      activeItem={1}
+      length={3}
+      showControls={true}
+      showIndicators={true}
+      className="z-depth-1"
+    >
+      <MDBCarouselInner>
+        <MDBCarouselItem itemId="1">
+          <MDBView>
+            <img
+              className="d-block w-100"
+              src="https://pokemongolive.com/img/posts/newgraphicsapr2018.jpg"
+              alt="Proyecto data lovers"
+            />
+          <MDBMask overlay="black-light" />
+          </MDBView>
+          <MDBCarouselCaption>
+            <h3 className="h3-responsive">Maestro Pokemon GO!</h3>
+            <p>Aplicación para jugadores de Pokemon Go, para buscar, filtrar y ordenar</p>
+            <div>
+            <span>            
+              <a className="proyLink"
+              href="https://palomazelada.github.io/SCL011-data-lovers/src/index.html"
+              target="blank">
+              Demo 
+              </a>
+              <a className="proyLink"
+              href="https://github.com/PalomaZelada/SCL011-data-lovers"
+              target="blank"
+              > 
+              Código</a></span>
+              </div>
+          </MDBCarouselCaption>
+        </MDBCarouselItem>
+        <MDBCarouselItem itemId="2">
+          <MDBView>
+            <img
+              className="d-block w-100"
+              src="https://lh5.googleusercontent.com/proxy/ZXvakVk6taUUxk5B0h7vfGeJ6hrLK13KKaqTQ-Zncf6qEmR1-NK5v7FjMdaS_VQV7PfA1cuRRkBui9tpEN2XCAaUYA"
+              alt="Proyecto Burger Queen"
+            />
+          <MDBMask overlay="black-strong" />
+          </MDBView>
+          <MDBCarouselCaption>
+            <h3 className="h3-responsive">Burger Queen</h3>
+            <p>Proyecto para restaurant, para toma de pedidos y preparación de pedidos</p>
+            <div>
+            <span>            
+              <a className="proyLink"
+              href="https://burger-queen-9b026.firebaseapp.com/"
+              target="blank">
+              Demo 
+              </a>
+              <a className="proyLink"
+              href="https://github.com/PalomaZelada/SCL011-BurgerQueen"
+              target="blank"
+              > 
+              Código</a></span>
+              </div>
+          </MDBCarouselCaption>
+        </MDBCarouselItem>
+        <MDBCarouselItem itemId="3">
+          <MDBView>
+            <img
+              className="d-block w-100"
+              src="https://mdbootstrap.com/img/Photos/Slides/img%20(9).jpg"
+              alt="Third slide"
+            />
+          <MDBMask overlay="black-slight" />
+          </MDBView>
+          <MDBCarouselCaption>
+            <h3 className="h3-responsive">Burger Queen</h3>
+            <p>Third text</p>
+            <div>
+            <span>            
+              <a className="proyLink"
+              href="https://palomazelada.github.io/SCL011-data-lovers/src/index.html"
+              target="blank">
+              Demo 
+              </a>
+              <a className="proyLink"
+              href="https://github.com/PalomaZelada/SCL011-data-lovers"
+              target="blank"
+              > 
+              Código</a></span>
+              </div>
+          </MDBCarouselCaption>
+        </MDBCarouselItem>
+      </MDBCarouselInner>
+    </MDBCarousel>
     </MDBContainer>
-}
-                </div>
-
+    </div>
         )
     }
 }

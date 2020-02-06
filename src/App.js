@@ -1,25 +1,26 @@
 import React from 'react';
 import './App.css';
 import 'bootstrap/dist/css/bootstrap.min.css';
-import Logo from './components/intro';
-import Aboutme from './components/title';
-import Navbar1 from './components/Navbar';
+import { BrowserRouter, Route, Switch } from 'react-router-dom';
+import Home from './components/Home';
 import Proyects from './components/Proyects';
+import Contact from './components/Contact';
 
 
 class App extends React.Component {
-  render(){
-      return (
-    <div className="App">
-      <Navbar1 />
-      <Logo />
-      <Aboutme />
-    
-    <div className="secondView">
-      <Proyects />
-    </div>
-    </div>
-      )
+  render() {
+    return (
+      <div className="App">
+        <BrowserRouter>
+          <Switch>
+            <Route path="/" exact component={Home} />
+            <Route path="/home" component={Home} />
+            <Route path="/proyects" component={Proyects} />
+            <Route path="/contact" component={Contact} />
+          </Switch>
+        </BrowserRouter>
+      </div>
+    )
   }
 }
 
