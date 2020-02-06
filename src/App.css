@@ -4,21 +4,31 @@
   background-size:     cover; 
   background-repeat:   no-repeat;
   background-position: center center; 
-  font-family: 'Noto Serif', serif;
+  font-family: 'Cousine', monospace;
   /* margin: 0px; */
   padding: 0px;
 }
 
-h1{
+/* h1{
   color: #6085BD;
   margin: 0px 0px 0px 10px;
+} */
+.logoName{
+  margin-top: 100px;
+  margin-left: 70px;
 }
+.justify-content-end{
+  font-weight: bold;
+}
+
 .aboutMe{
  height: 100px; 
  width: 400px;
- margin: 200px 10px 0px 800px;
+ margin: -100px 10px 0px 800px;
  text-align: justify;
  color: rgba(35, 35, 35, 0.65);
- font-size: 20px;
+ font-size: 18px;
 }
-
+.secondView{
+  position: absolute;
+}

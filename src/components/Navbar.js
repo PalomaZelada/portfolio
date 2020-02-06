@@ -1,31 +1,35 @@
 import React, { Component } from 'react';
-import Nav from 'react-bootstrap/Nav'
-import Navbar from 'react-bootstrap/Navbar'
+import Nav from 'react-bootstrap/Nav';
+import Navbar from 'react-bootstrap/Navbar';
+import home from '../images/home.png';
+import Proyects from './Proyects';
+import Contact from './Contact';
 
 
-class Navbar1 extends Component{
-    render(){
-        return (
-            <Nav className="justify-content-left" defaultActiveKey="/home" as="ul">
-    <Navbar.Brand href="/home">
-      <img
-        src="https://cdn1.vectorstock.com/i/1000x1000/13/95/initial-letter-pz-logo-template-design-vector-22671395.jpg"
-        width="40"
-        height="40"
-        alt="PZ"
-      />
-    </Navbar.Brand>
-            <Nav.Item as="li">
-              <Nav.Link href="/home">Active</Nav.Link>
-            </Nav.Item>
-            <Nav.Item as="li">
-              <Nav.Link eventKey="link-1">Link</Nav.Link>
-            </Nav.Item>
-            <Nav.Item as="li">
-              <Nav.Link eventKey="link-2">Link</Nav.Link>
-            </Nav.Item>
-          </Nav>
-        )
-    }
+
+class Navbar1 extends Component {
+  render() {
+    return (
+      <Navbar justify variant="tabs" className="navbar-form navbar-fixed-top">
+        <Navbar.Brand className="mr-auto" href="#home">
+          <img
+            src={home}
+            width="30"
+            height="30"
+            alt="PZ"
+          />
+        </Navbar.Brand>
+        <Nav className="justify-content-end" defaultActiveKey="/home" as="ul">
+          <Nav.Item as="li">
+            <Nav.Link href="/proyects" component={Proyects}>Proyectos</Nav.Link>
+          </Nav.Item>
+          <Nav.Item as="li">
+            <Nav.Link href="/contact" component={Contact}>Contacto</Nav.Link>
+          </Nav.Item>
+        </Nav>
+      </Navbar>
+
+    )
+  }
 }
 export default Navbar1
