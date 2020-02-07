@@ -1,14 +1,14 @@
 import React, { Component } from 'react';
-import { MDBCarousel, MDBCarouselInner, MDBCarouselItem, MDBContainer, MDBRow, MDBCol, MDBCard, MDBCardImage,
-    MDBCardBody, MDBCardTitle, MDBCardText, MDBBtn, MDBMask, MDBView, MDBCarouselCaption } from "mdbreact";
+import { MDBCarousel, MDBCarouselInner, MDBCarouselItem, MDBContainer, MDBMask, MDBView, MDBCarouselCaption } from "mdbreact";
 import Navbar1 from './Navbar';
 import '../App.css';
-
+import foto4 from '../images/foto4.jpg'
 class Proyects extends Component {
     render() {
         return (
           <div>
          <Navbar1 />   
+         <div className="carruselContainer">
          <MDBContainer>
       <MDBCarousel
       activeItem={1}
@@ -22,14 +22,14 @@ class Proyects extends Component {
           <MDBView>
             <img
               className="d-block w-100"
-              src="https://pokemongolive.com/img/posts/newgraphicsapr2018.jpg"
+              src="https://images-wixmp-ed30a86b8c4ca887773594c2.wixmp.com/f/d2596d0e-8292-46b8-ad65-d5ec8d67f020/d3ei2p6-2c7a7cd7-c5e5-403f-baf2-ecccac3ba278.jpg?token=eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJzdWIiOiJ1cm46YXBwOjdlMGQxODg5ODIyNjQzNzNhNWYwZDQxNWVhMGQyNmUwIiwiaXNzIjoidXJuOmFwcDo3ZTBkMTg4OTgyMjY0MzczYTVmMGQ0MTVlYTBkMjZlMCIsIm9iaiI6W1t7InBhdGgiOiJcL2ZcL2QyNTk2ZDBlLTgyOTItNDZiOC1hZDY1LWQ1ZWM4ZDY3ZjAyMFwvZDNlaTJwNi0yYzdhN2NkNy1jNWU1LTQwM2YtYmFmMi1lY2NjYWMzYmEyNzguanBnIn1dXSwiYXVkIjpbInVybjpzZXJ2aWNlOmZpbGUuZG93bmxvYWQiXX0.n3hhHRZ0UITG4nvmAcdziiq51jmz2KzYWnJcAgjEKQY"
               alt="Proyecto data lovers"
             />
           <MDBMask overlay="black-light" />
           </MDBView>
           <MDBCarouselCaption>
-            <h3 className="h3-responsive">Maestro Pokemon GO!</h3>
-            <p>Aplicación para jugadores de Pokemon Go, para buscar, filtrar y ordenar</p>
+            <h3 className="h3-responsive">Maestro Pokemon</h3>
+            <p className="resumen">Aplicación para jugadores de Pokemon Go, con data de la primera generación</p>
             <div>
             <span>            
               <a className="proyLink"
@@ -56,7 +56,7 @@ class Proyects extends Component {
           </MDBView>
           <MDBCarouselCaption>
             <h3 className="h3-responsive">Burger Queen</h3>
-            <p>Proyecto para restaurant, para toma de pedidos y preparación de pedidos</p>
+            <p className="resumen">Proyecto para restaurant, para toma de pedidos y preparación de pedidos</p>
             <div>
             <span>            
               <a className="proyLink"
@@ -76,23 +76,23 @@ class Proyects extends Component {
           <MDBView>
             <img
               className="d-block w-100"
-              src="https://mdbootstrap.com/img/Photos/Slides/img%20(9).jpg"
-              alt="Third slide"
+              src={foto4}
+              alt="Proyecto Feminist PRW"
             />
           <MDBMask overlay="black-slight" />
           </MDBView>
           <MDBCarouselCaption>
-            <h3 className="h3-responsive">Burger Queen</h3>
-            <p>Third text</p>
+            <h3 className="h3-responsive">Feminist PWR</h3>
+            <p className="resumen">Red social orientada a mujeres, para tratar temas feministas </p>
             <div>
             <span>            
               <a className="proyLink"
-              href="https://palomazelada.github.io/SCL011-data-lovers/src/index.html"
+              href="https://github.com/PalomaZelada/SCL011-Social-Network"
               target="blank">
               Demo 
               </a>
               <a className="proyLink"
-              href="https://github.com/PalomaZelada/SCL011-data-lovers"
+              href="https://github.com/PalomaZelada/SCL011-Social-Network"
               target="blank"
               > 
               Código</a></span>
@@ -102,6 +102,7 @@ class Proyects extends Component {
       </MDBCarouselInner>
     </MDBCarousel>
     </MDBContainer>
+    </div>
     </div>
         )
     }

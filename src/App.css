@@ -2,7 +2,6 @@
   font-family: 'Cousine', monospace;
   /* margin: 0px; */
   padding: 0px;
-  font-weight: initial;
 }
 body{
   background-image: url('./images/abstract-2069084_1920.jpg');
@@ -20,6 +19,10 @@ body{
   margin-top: 100px;
   margin-left: 70px;
 }
+.logoSize{
+  width:500px;
+  height:250px;
+}
 .justify-content-end{
   font-weight: bold;
 }
@@ -27,12 +30,14 @@ body{
 .aboutMe{
  height: 100px; 
  width: 400px;
- margin: -100px 10px 0px 800px;
+ margin: -150px 10px 0px 800px;
  text-align: justify;
  color: rgba(35, 35, 35, 0.65);
  font-size: 18px;
 }
-
+.btn-cv{
+  margin: 120px 10px 0px 910px;
+}
 .backgroundColor{
   width:20px;
   height:10px
@@ -46,6 +51,39 @@ body{
   color: rgba(35, 35, 35, 0.65);
   border-radius: 5px;
 }
-p{
-  font-weight: bold;
+.resumen{
+  font-weight: bolder;
+}
+.h3-responsive{
+  font-weight: bolder;
+}
+
+@media only screen and (min-width: 350px) and (max-width:640px){
+.logoSize{
+  width:300px;
+  height:150px;
+}
+.logoName{
+  margin: 10px 0px 0px 40px;
+}
+.aboutMe{
+  margin: 60px 0px 0px 40px;
+  width: 300px;
+  font-size: 14px;
+  font-weight: 900;
+}
+.btn-cv{
+  margin:100px 0px 0px 90px;
+}
+.carruselContainer{
+margin-top: 50px;
+}
+.h3-responsive{
+  font-size: 16px;
+}
+.resumen{
+  font-size: 14px;
+  font-weight: bolder;
+}
+
 }
