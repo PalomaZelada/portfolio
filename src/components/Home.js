@@ -16,7 +16,7 @@ class Home extends React.Component {
                 <div className="btn-cv">
                 <Button href={cv} 
                 target="blank" 
-                variant="outline-primary">Ver Curriculum</Button>
+                variant="primary">Ver Curriculum</Button>
                 </div>
             </div>
         )

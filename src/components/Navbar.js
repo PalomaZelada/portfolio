@@ -2,7 +2,6 @@ import React, { Component } from 'react';
 import Nav from 'react-bootstrap/Nav';
 import Navbar from 'react-bootstrap/Navbar';
 import home from '../images/home.png';
-import '../App.css';
 
 
 class Navbar1 extends Component {
