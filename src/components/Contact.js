@@ -7,7 +7,8 @@ class Contact extends Component {
         return(
             <div>
                 <Navbar1 />
-                
+
+}
             </div>
         )
     }
