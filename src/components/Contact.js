@@ -1,15 +1,16 @@
 import React, { Component } from 'react';
-import Navbar1 from './Navbar';
+import ScrollableAnchor from 'react-scrollable-anchor'
 
 
 class Contact extends Component {
     render() {
-        return(
+        return (
+            <ScrollableAnchor id="contact">
             <div>
-                <Navbar1 />
+                <h1>LLAMAME BB</h1>
+            </div>   
+            </ScrollableAnchor>
 
-}
-            </div>
         )
     }
 }

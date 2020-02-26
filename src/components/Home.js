@@ -1,16 +1,16 @@
 import React from 'react';
-import '../App.css';
 import Logo from './intro';
 import Aboutme from './title';
-import Navbar1 from './Navbar';
 import Button from 'react-bootstrap/Button';
-import cv from '../images/cv_PalomaZelada.pdf';
+import cv from '../images/CV_PalomaZelada.pdf';
+import './components.css';
+import ScrollableAnchor from 'react-scrollable-anchor';
 
 class Home extends React.Component {
     render() {
         return (
+            <ScrollableAnchor id="home">
             <div className="Home">
-                <Navbar1 />
                 <Logo />
                 <Aboutme />
                 <div className="btn-cv">
@@ -19,6 +19,8 @@ class Home extends React.Component {
                 variant="primary">Ver Curriculum</Button>
                 </div>
             </div>
+                            
+            </ScrollableAnchor>
         )
     }
 }
