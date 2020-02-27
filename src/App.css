@@ -1,9 +1,10 @@
 *{
   font-family: 'Cousine', monospace;
-  /* margin: 0px; */
   padding: 0px;
 }
 body{
+  height: 100%;
+  widows: 100%;
   background-image: url('./images/abstract-2069084_1920.jpg');
   background-attachment: fixed;
   background-size:     cover; 
@@ -63,6 +64,10 @@ font-weight: bolder;
 
 
 @media only screen and (min-width: 350px) and (max-width:640px){
+body{
+  height: 100%;
+  width: 100%;
+}
 .logoSize{
   width:300px;
   height:150px;

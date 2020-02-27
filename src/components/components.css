@@ -1,9 +1,14 @@
 .Home{
     padding-bottom: 100px;
+    padding-top:70px
 }
-
+.section-title{
+    display: flex;
+    justify-content: center;
+    padding-top: 80px;
+}
 .borderCard{
-    padding-top: 70px;
+    padding-top: 50px;
     padding-left: 100px;
     padding-right: 100px;
     margin: 10px 30px 0px 30px;
@@ -31,22 +36,38 @@
     
   }
 .navbar-style{
+    width: 100%;
     position: fixed;
     display:flex;
     flex-direction: row;
-    justify-content: space-between;
-    align-items: flex-end;
-    color: white;
-    border: 1px solid black;
+    justify-content: flex-end;
+    align-items: center;
     top: 0;
     left: 0;
+    background: -moz-linear-gradient(top, #f8fcf7, transparent);
 }
 .btnNav{
     background: none;
+    outline: none;
+    color: rgba(35, 35, 35, 0.65);
+    font-weight: 1000;
+    border:none;
     padding-left: 20px;
     padding-right: 20px;
-
+    padding-top: 30px;
 }
 .btnNav:hover{
-    color: grey
+    color: #0d52b5;
+}
+
+@media only screen and (min-width: 350px) and (max-width:640px){
+.borderCard{
+    padding-left: 0%;
+    padding-right: 0%;
+    padding-top: 0%;
+    margin-bottom: 20px;
+}
+.navbar-style{
+    justify-content: center;
+}
 }

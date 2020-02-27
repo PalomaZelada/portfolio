@@ -8,6 +8,9 @@ class Proyects extends Component {
     return (
       <ScrollableAnchor id="proyects">
       <div>
+        <section className="section-title">
+        <h3>Proyectos Destacados</h3>
+        </section>
         <div className="borderCard">
           <Row>
             <Col sm="4">
@@ -44,7 +47,7 @@ class Proyects extends Component {
               <Card body>
                 <CardTitle className="cardTitle">Feminist PWR</CardTitle>
                 <CardImg top width="100%" src="https://images-wixmp-ed30a86b8c4ca887773594c2.wixmp.com/f/d2596d0e-8292-46b8-ad65-d5ec8d67f020/d3ei2p6-2c7a7cd7-c5e5-403f-baf2-ecccac3ba278.jpg?token=eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJzdWIiOiJ1cm46YXBwOjdlMGQxODg5ODIyNjQzNzNhNWYwZDQxNWVhMGQyNmUwIiwiaXNzIjoidXJuOmFwcDo3ZTBkMTg4OTgyMjY0MzczYTVmMGQ0MTVlYTBkMjZlMCIsIm9iaiI6W1t7InBhdGgiOiJcL2ZcL2QyNTk2ZDBlLTgyOTItNDZiOC1hZDY1LWQ1ZWM4ZDY3ZjAyMFwvZDNlaTJwNi0yYzdhN2NkNy1jNWU1LTQwM2YtYmFmMi1lY2NjYWMzYmEyNzguanBnIn1dXSwiYXVkIjpbInVybjpzZXJ2aWNlOmZpbGUuZG93bmxvYWQiXX0.n3hhHRZ0UITG4nvmAcdziiq51jmz2KzYWnJcAgjEKQY" alt="Feminist PWR" />
-                <CardText>Red social creada para mujeres para tratar temas de feminismo y que afectan a las minorias</CardText>
+                <CardText>Red social creada para mujeres para tratar temas de feminismo y de minorias</CardText>
                 <Button color="primary"
                   href="https://palomazelada.github.io/SCL011-data-lovers/src/index.html"
                   target="blank"
@@ -57,6 +60,9 @@ class Proyects extends Component {
             </Col>
           </Row>
         </div>
+        <section className="section-title">
+        <h3>Herramientas</h3>
+        </section>
         <div className="skills-direction">
         <div className="container-skills">
           <a href="https://developer.mozilla.org/es/docs/Web/JavaScript" target="_blank">
