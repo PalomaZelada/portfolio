@@ -4,6 +4,7 @@ import 'bootstrap/dist/css/bootstrap.min.css';
 import NavBar from './components/Navbar';
 import Home from './components/Home';
 import Proyects from './components/Proyects';
+import Skills from './components/Skills';
 import Contact from './components/Contact';
 
 
@@ -13,6 +14,7 @@ class App extends React.Component {
       <div className="App">
         <NavBar />
         <Home />
+        <Skills />
         <Proyects />
         <Contact />
       </div>
