@@ -88,7 +88,58 @@
       box-shadow: 0 0 10px  #abb2b9 ;
     }
 
-@media only screen and (min-width: 350px) and (max-width:640px){
+@media (max-width: 414px){
+        body{
+          background-image: url('../images/fondo2.jpg');
+        }
+        h3{
+        text-align: center;
+
+        }
+        .logoSize {
+            height: auto;
+            width: 95%;
+            padding-left: 15px;
+            padding-top: 10px;
+        }
+        .logoName{
+        margin: 0px;
+        padding: 0px;
+        }
+        .aboutMe {
+            margin: 60px 0px 0px 15px;
+            font-size: 12px;
+            padding-right: 5px;
+        }
+      .btnNavRespo{
+        padding-top: 30px;
+      padding-left: 4px;
+      padding-right: 4px;
+        font-size: 12px;
+      }
+      .btn-cv {
+        margin: 80px 0px 0px 60px;
+    }
+      .navbar-style{
+        justify-content: center;
+      }
+      .skills-direction{
+          padding-top: 30px;
+          padding-left:40px;
+      }
+      .section-title{
+          padding-top: 80px;
+      }
+      .container-display{
+          flex-direction: column;
+          padding:0;
+      }
+      .borderCard{
+        padding:0;
+      }
+      }
+
+@media only screen and (min-width: 415px) and (max-width:700px){
 .borderCard{
     padding-left: 0%;
     padding-right: 0%;
