@@ -73,7 +73,8 @@ body{
   height:150px;
 }
 .logoName{
-  margin: 10px 0px 0px 40px;
+  margin: 20px 0px 0px 40px;
+  padding-left: 20px;
 }
 .aboutMe{
   margin: 60px 0px 0px 40px;
