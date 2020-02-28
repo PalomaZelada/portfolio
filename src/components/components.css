@@ -92,6 +92,12 @@
 @media (max-width: 414px){
         body{
           background-image: url('../images/fondo2.jpg');
+          height: 100%;
+          width: 100%;
+          background-attachment: fixed;
+          background-size:     cover; 
+          background-repeat:   no-repeat;
+          background-position: center center; 
         }
         .btn-cv{
             display: flex;
