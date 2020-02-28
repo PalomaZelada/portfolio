@@ -47,6 +47,7 @@
     top: 0;
     left: 0;
     background: -moz-linear-gradient(top, #f8fcf7, transparent);
+    z-index: 9000;
 }
 .btnNav{
     background: none;
