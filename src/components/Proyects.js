@@ -52,11 +52,11 @@ class Proyects extends Component {
                 <CardImg top width="100%" height="140" src={woman} alt="Feminist PWR" />
                 <CardText>Red social creada para mujeres para tratar temas de feminismo y de minorias</CardText>
                 <Button color="primary"
-                  href="https://palomazelada.github.io/SCL011-data-lovers/src/index.html"
+                  href="https://carpoolcl-b2a85.firebaseapp.com/"
                   target="blank"
                 >Demo</Button>
                 <Button color="primary"
-                href="https://github.com/PalomaZelada/SCL011-data-lovers"
+                href="https://github.com/PalomaZelada/SCL011-Social-Network-2"
                   target="blank"
                 >Código</Button>
               </Card>
