@@ -64,10 +64,15 @@ font-weight: bolder;
 
 
 @media (max-width:415px) and (max-width:700px){
-body{
+.bg-image{
   background-image: url('./images/fondo2.jpg');
   height: 100%;
   width: 100%;
+  background-attachment: fixed;
+  background-size:     cover; 
+  background-repeat:   no-repeat;
+  background-position: center center; 
+  backdrop-filter: blur(100px);
 }
 .logoSize{
   width:300px;

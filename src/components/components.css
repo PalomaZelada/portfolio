@@ -90,9 +90,9 @@
     }
 
 @media (max-width: 414px){
-        body{
-          background-image: url('../images/fondo2.jpg');
-          height: 100%;
+        .bg-image{
+          background-image: url('../images/fondo2.jpg') blur(100px);
+          height: auto;
           width: 100%;
           background-attachment: fixed;
           background-size:     cover; 
