@@ -46,8 +46,8 @@
     align-items: center;
     top: 0;
     left: 0;
-    background: -moz-linear-gradient(top, #f8fcf7, transparent);
-    z-index: 9000;
+    background: -moz-linear-gradient(top,  #f8fcf7,transparent);
+    z-index: 9001;
 }
 .btnNav{
     background: none;
@@ -91,7 +91,7 @@
 
 @media (max-width: 414px){
         .bg-image{
-          background-image: url('../images/fondo2.jpg') blur(100px);
+          background-image: url('../images/fondo2.jpg');
           height: auto;
           width: 100%;
           background-attachment: fixed;
@@ -103,7 +103,8 @@
             display: flex;
             width: auto;
             align-content: center;
-        }
+            margin:0;
+          }
         h3{
         text-align: center;
 
@@ -119,9 +120,11 @@
         padding: 0px;
         }
         .aboutMe {
-            margin: 60px 0px 0px 15px;
+            margin: 60px 6px 0px 6px;
             font-size: 12px;
             padding-right: 5px;
+            background-color:#f8fcf7;
+            padding-left: 5px;
         }
       .btnNavRespo{
         padding-top: 30px;
@@ -129,19 +132,23 @@
       padding-right: 4px;
         font-size: 12px;
       }
-      .btn-cv {
-        margin: 80px 0px 0px 60px;
-    }
+
       .navbar-style{
         justify-content: center;
+        background: -moz-linear-gradient(top, transparent, #f8fcf7)
       }
       .skills-direction{
           padding-top: 30px;
-          padding-left: 40px;
           width:auto;
-          justify-content: center;
           align-items: center;
           margin:0 auto;
+      }
+      .container-skills{
+         display: flex;
+         justify-content: center;
+        flex-direction: row;
+        flex-wrap: wrap;
+        align-content: center; 
       }
 
       .section-title{
@@ -179,8 +186,14 @@
 }
 .skills-direction{
     padding-top: 10px;
-    padding-left: 20px;
 }
+.container-skills{
+    display: flex;
+    justify-content: center;
+   flex-direction: row;
+   flex-wrap: wrap;
+   align-content: center; 
+ }
 .container-display{
     flex-direction: column;
     padding-top: 0;

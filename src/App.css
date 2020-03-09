@@ -64,7 +64,7 @@ font-weight: bolder;
 
 
 @media (max-width:415px) and (max-width:700px){
-.bg-image{
+body{
   background-image: url('./images/fondo2.jpg');
   height: 100%;
   width: 100%;
@@ -72,7 +72,6 @@ font-weight: bolder;
   background-size:     cover; 
   background-repeat:   no-repeat;
   background-position: center center; 
-  backdrop-filter: blur(100px);
 }
 .logoSize{
   width:300px;
@@ -90,7 +89,11 @@ font-weight: bolder;
   padding-right: 20px;
 }
 .btn-cv{
-  margin:100px 0px 0px 90px;
+  display: flex;
+  width: auto;
+  align-content: center;
+  justify-content: center;
+  margin: 0;
 }
 .carruselContainer{
 margin-top: 50px;
