@@ -91,8 +91,10 @@
 
 @media (max-width: 414px){
         body{
-          background-image: url('../images/fondo2.jpg');
-          height: auto;
+
+            background-image: none;
+            background-color: white;
+            height: auto;
           width: 100%;
           background-attachment: fixed;
           background-size:     cover; 
@@ -135,8 +137,7 @@
 
       .navbar-style{
         justify-content: center;
-        background: -moz-linear-gradient(top, transparent, #f8fcf7)
-      }
+        background-color: white;    }
       .skills-direction{
           padding-top: 30px;
           width:auto;
@@ -165,7 +166,8 @@
 
 @media only screen and (min-width: 415px) and (max-width:700px){
     body{
-        background-image: url('../images/fondo2.jpg');
+        background-image: none;
+        background-color: white;
         height: auto;
         width: 100%;
         background-attachment: fixed;
